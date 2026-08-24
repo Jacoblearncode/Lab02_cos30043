@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 02 - Bootstrap Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    /* Site header */
+    .site-header {
+      background-color: #111;
+      color: #fff;
+    }
+
+    .site-header .brand-name {
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .site-header .brand-name .accent {
+      color: #e10600;
+    }
+
+    .site-header .tagline {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      color: #adb5bd;
+    }
+
+    /* Intro section */
+    .intro-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    /* Why choose us cards */
+    .why-us-section {
+      background-color: #fff;
+    }
+
+    .feature-card {
+      height: 100%;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-card .feature-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background-color: #e10600;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+
+    .feature-card h5 {
+      font-weight: 700;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: #111;
+      color: #adb5bd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1. Website title / header -->
+  <header class="site-header py-3">
+    <div class="container">
+      <span class="brand-name fs-4">AKTIV<span class="accent"> PERFORMANCE CENTRE</span></span>
+      <div class="tagline">TUNING | REMAPPING | CODING | SERVICING</div>
+    </div>
+  </header>
+
+  <!-- 2. Description + image section -->
+  <section class="intro-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-8">
+          <h2>Your Car. Unleashed.</h2>
+          <p class="lead">
+            Aktiv Performance Centre is Malaysia's go-to workshop for vehicle tuning,
+            ECU remapping, and factory coding. Our certified technicians help you unlock
+            your car's full potential with safe, warranty-conscious upgrades and
+            precision servicing.
+          </p>
+          <p>
+            From performance parts to routine maintenance, we treat every vehicle that
+            comes through our doors like our own.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://picsum.photos/seed/aktivtuning/600/450" alt="Performance car in workshop">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Why Choose Us section -->
+  <section class="why-us-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Why Choose Us?</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-cpu"></i></div>
+            <h5>ECU Remapping</h5>
+            <p>Unlock hidden power and torque with tailored, dyno-tested ECU tunes.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-code-slash"></i></div>
+            <h5>Vehicle Coding</h5>
+            <p>Enable factory-hidden features and customise settings safely via OEM coding.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+            <h5>Warranty Safe</h5>
+            <p>All our tuning solutions are designed to keep your manufacturer warranty intact.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-tools"></i></div>
+            <h5>Expert Servicing</h5>
+            <p>Certified technicians handle everything from oil changes to full diagnostics.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-gear-wide-connected"></i></div>
+            <h5>Performance Parts</h5>
+            <p>Genuine and aftermarket parts sourced for reliability and real-world gains.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-geo-alt"></i></div>
+            <h5>Nationwide Support</h5>
+            <p>Serving customers across Malaysia with quotation and booking support online.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Footer -->
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Aktiv Performance Centre. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+
+</html>
